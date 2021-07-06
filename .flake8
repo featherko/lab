@@ -8,13 +8,14 @@ ignore = E203, E501, W503,  # handled by black
 exclude =
     *_venv
     venv_*
-max-complexity = 7
-max-cognitive-complexity = 5
+max-complexity = 15
+max-cognitive-complexity = 15
 per-file-ignores =
     # No docs and annotation required for tests
     test*.py: D10, D101, D103, S101, ANN
     # Skip unused imports in __init__ files
     __init__.py: F401
+    graph.py: T001, E800
 
 # Import order https://pypi.org/project/flake8-import-order/
 application-import-names = kino
